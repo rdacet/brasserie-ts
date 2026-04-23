@@ -65,14 +65,13 @@ Puis, dans l'admin WordPress :
 
 ## 6. Captures d'écran
 
-| Page | Aperçu |
-|---|---|
-| Accueil (hero) | ![Hero](docs/screens/hero.png) |
-| À propos | ![À propos](docs/screens/apropos.png) |
-| Produits | ![Produits](docs/screens/produits.png) |
-| Modal produit | ![Modal](docs/screens/modal.png) |
-| Contact | ![Contact](docs/screens/contact.png) |
-| Mobile | ![Mobile](docs/screens/mobile.png) |
+Acceuil :<img width="2559" height="1263" alt="image" src="https://github.com/user-attachments/assets/1df30eb1-6da7-41c0-9dda-1aacdbd457df" />
+
+A propos : <img width="2559" height="1165" alt="image" src="https://github.com/user-attachments/assets/47ac8990-cf02-4f45-b4c7-faaab4a7d0a1" />
+
+Produit : <img width="2194" height="1176" alt="image" src="https://github.com/user-attachments/assets/51b340d2-75f5-40ca-9be0-cc534fee36f8" />
+
+Contact : <img width="2559" height="1155" alt="image" src="https://github.com/user-attachments/assets/f7a6672b-5457-41bc-b242-24186ee49f35" />
 
 ## 7. Compétences
 
