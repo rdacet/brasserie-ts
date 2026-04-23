@@ -54,10 +54,6 @@ Puis, dans l'admin WordPress :
 2. **Réglages → Lecture** → "Une page statique" → choisir la page d'accueil
 3. **Apparence → Menus** → créer un menu avec 4 items (ancres `/#accueil`, `/#apropos`, `/#produits`, `/#contact`) et l'assigner à l'emplacement **Menu principal**
 4. Installer le plugin **WPForms Lite** → créer un formulaire de contact simple → récupérer son ID
-5. Mettre à jour l'ID dans `front-page.php` si différent de `22` :
-   ```php
-   <?php echo do_shortcode( '[wpforms id="22"]' ); ?>
-   ```
 
 ## 5. Mise en ligne (Infinity Free)
 
