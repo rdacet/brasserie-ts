@@ -1,7 +1,5 @@
 # Brasserie Terroir & Savoirs — Site vitrine WordPress
 
-> Thème WordPress sur mesure développé en HTML / CSS / PHP pour la **Brasserie Terroir & Savoirs** (Hauts-de-France), dans le cadre du projet de fin de première année **BTS SIO SLAM**.
-
 ## 1. Contexte du projet
 
 La **Brasserie Terroir & Savoirs**, artisan brasseur situé dans les Hauts-de-France, souhaite moderniser son image en se dotant d'un **site vitrine** pour présenter sa gamme de bières et spiritueux.
