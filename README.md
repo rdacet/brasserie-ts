@@ -19,35 +19,7 @@ Le choix de **WordPress** est imposé par le sujet, mais la réalisation visuell
 
 🔗 **[https://rdacetbrasserie.free.nf](https://rdacetbrasserie.free.nf)** — hébergé sur Infinity Free
 
-## 3. Stack technique
-
-| Couche | Technologie |
-|---|---|
-| CMS | WordPress 6.x |
-| Langages | PHP 8, HTML5, CSS3, JavaScript (Vanilla) |
-| Hébergement | Infinity Free (Apache + PHP + MySQL) |
-| Éditeur | VS Code |
-| Gestion de version | Git + GitHub |
-| Typographies | Playfair Display (titres) + Inter (texte) via Google Fonts |
-| Plugin tiers | **WPForms Lite** pour le formulaire de contact |
-
-**Zéro framework CSS / zéro builder** : tout est écrit à la main pour rester léger et pédagogiquement parlant.
-
-## 4. Fonctionnalités
-
-- ✅ Page d'accueil une seule page (one-page) avec ancres : Accueil, À propos, Produits, Contact
-- ✅ Header sticky avec logo + menu administrable depuis WordPress
-- ✅ Bandeau légal permanent « L'abus d'alcool est dangereux pour la santé »
-- ✅ Hero visuel avec image de cuves de brassage
-- ✅ Galerie produits (5 cartes : Blonde, Brune, IPA, Whisky, Gin)
-- ✅ **Modal produit** : clic sur une carte → popup avec description complète
-- ✅ Section À propos / Histoire de la brasserie
-- ✅ Formulaire de contact fonctionnel (WPForms)
-- ✅ **Responsive** mobile-first (breakpoints 720 / 860 px) avec menu burger
-- ✅ **Accessibilité** : `aria-label`, `aria-expanded`, fermeture modal au clavier (Échap)
-- ✅ Menu dynamique administrable (`register_nav_menus`) avec fallback en dur
-
-## 5. Architecture du thème
+## 3. Architecture du thème
 
 ```text
 brasserie-ts/
@@ -68,19 +40,7 @@ brasserie-ts/
         └── produits-01.png … produits-05.png
 ```
 
-### Points clés du code
-
-**`functions.php`** — Le catalogue produits est **stocké en dur** dans une fonction PHP `bts_get_products()`. Pour ce site vitrine de 5 produits, c'est plus simple qu'un Custom Post Type. Migration facile vers un CPT si la gamme s'étend.
-
-**`front-page.php`** — Passe les données produit via des `data-*` attributes sur chaque `<article class="product-card">`, lues ensuite en JS pour remplir la modal.
-
-**`assets/js/main.js`** — 70 lignes de Vanilla JS, sans dépendance. Gère :
-- le toggle du menu mobile (`aria-expanded`)
-- l'ouverture de la modal au clic produit
-- la fermeture (clic sur ×, clic en dehors, touche Échap)
-- le blocage du scroll du body quand la modal est ouverte
-
-## 6. Installation locale
+## 4. Installation locale
 
 ```bash
 # Cloner le dépôt dans le dossier des thèmes WP
@@ -99,27 +59,15 @@ Puis, dans l'admin WordPress :
    <?php echo do_shortcode( '[wpforms id="22"]' ); ?>
    ```
 
-## 7. Mise en ligne (Infinity Free)
+## 5. Mise en ligne (Infinity Free)
 
 1. Créer un compte sur [infinityfree.com](https://infinityfree.com) + un sous-domaine gratuit
-2. Installer WordPress via **Softaculous**
-3. Zipper le dossier `brasserie-ts/` (attention : sous Windows, préférer un script `.NET ZipFile` pour garder des slashes `/` — Compress-Archive insère des `\` qui font échouer l'upload WP)
+2. Installer WordPress via **Script installer**
+3. Zipper le dossier `brasserie-ts/`
 4. **Apparence → Thèmes → Ajouter → Téléverser un thème** → sélectionner le .zip → **Installer** → **Activer**
 5. Uploader les images manquantes (`hero.jpg`) directement dans `wp-content/themes/brasserie-ts/assets/img/` via le File Manager cPanel
 
-## 8. Choix techniques
-
-| Choix | Raison |
-|---|---|
-| Thème sur mesure (pas Astra/Divi/Elementor) | Démontrer la maîtrise technique WordPress, HTML/CSS/PHP |
-| One-page + ancres | Un site vitrine 5 produits ne justifie pas de multi-pages |
-| Données produits en dur dans `functions.php` | Simplicité ; migration vers CPT facile si la gamme grandit |
-| Modal JS plutôt que page dédiée | Meilleure UX (pas de rechargement) ; SEO secondaire pour un site vitrine |
-| Vanilla JS | Pas besoin de jQuery, aucune dépendance externe, JS < 2 ko |
-| Google Fonts (Playfair + Inter) | Contraste serif/sans-serif = élégance artisanale |
-| Palette cuivrée via custom properties CSS | Maintenance simple, cohérence visuelle |
-
-## 9. Captures d'écran
+## 6. Captures d'écran
 
 | Page | Aperçu |
 |---|---|
@@ -130,28 +78,20 @@ Puis, dans l'admin WordPress :
 | Contact | ![Contact](docs/screens/contact.png) |
 | Mobile | ![Mobile](docs/screens/mobile.png) |
 
-## 10. Compétences BTS SIO mobilisées
+## 7. Compétences
 
 **Bloc 1 — Support et mise à disposition de services informatiques**
 - Installation et configuration d'un CMS (WordPress)
 - Déploiement sur hébergement mutualisé (Infinity Free, File Manager cPanel)
 
-**Bloc 2 — Conception et développement d'applications**
-- Développement d'un thème PHP/HTML/CSS sur mesure
-- Gestion du responsive (mobile-first, media queries)
-- Accessibilité (ARIA)
+**Bloc 2 — Conception et développement**
+- Développement d'un thème PHP/HTML/CSS
+- Gestion du WP Form
+- Accessibilité
 - Versionnage avec Git
 
-**Compétences transverses**
+**Compétences autres**
 - Rédaction de documentation technique (ce README)
 - Prise en compte d'un cahier des charges client
-- Respect des contraintes légales (bandeau d'avertissement sur l'alcool)
 
-## 11. Licence
-
-MIT — Voir le fichier [LICENSE](LICENSE).
-
----
-
-**Auteur :** Romain Dacet — BTS SIO SLAM — 2026
-**Professeur référent :** Augustin Lecomte — [www.pedagogeek.fr](https://www.pedagogeek.fr)
+**Auteur :** Romain Dacet — BTS SIO SISR — 2025/2027
