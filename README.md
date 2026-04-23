@@ -2,26 +2,6 @@
 
 > Thème WordPress sur mesure développé en HTML / CSS / PHP pour la **Brasserie Terroir & Savoirs** (Hauts-de-France), dans le cadre du projet de fin de première année **BTS SIO SLAM**.
 
-![Aperçu du site](docs/screens/accueil.png)
-
----
-
-## Sommaire
-
-1. [Contexte du projet](#1-contexte-du-projet)
-2. [Démo en ligne](#2-démo-en-ligne)
-3. [Stack technique](#3-stack-technique)
-4. [Fonctionnalités](#4-fonctionnalités)
-5. [Architecture du thème](#5-architecture-du-thème)
-6. [Installation locale](#6-installation-locale)
-7. [Mise en ligne (Infinity Free)](#7-mise-en-ligne-infinity-free)
-8. [Choix techniques](#8-choix-techniques)
-9. [Captures d'écran](#9-captures-décran)
-10. [Compétences BTS SIO mobilisées](#10-compétences-bts-sio-mobilisées)
-11. [Licence](#11-licence)
-
----
-
 ## 1. Contexte du projet
 
 La **Brasserie Terroir & Savoirs**, artisan brasseur situé dans les Hauts-de-France, souhaite moderniser son image en se dotant d'un **site vitrine** pour présenter sa gamme de bières et spiritueux.
