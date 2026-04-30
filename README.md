@@ -39,23 +39,7 @@ brasserie-ts/
         ├── hero.jpg
         └── produits-01.png … produits-05.png
 ```
-
-## 4. Installation locale
-
-```bash
-# Cloner le dépôt dans le dossier des thèmes WP
-cd wp-content/themes
-git clone https://github.com/<ton-user>/brasserie-ts.git
-```
-
-Puis, dans l'admin WordPress :
-
-1. **Apparence → Thèmes → Activer** le thème *Brasserie T&S*
-2. **Réglages → Lecture** → "Une page statique" → choisir la page d'accueil
-3. **Apparence → Menus** → créer un menu avec 4 items (ancres `/#accueil`, `/#apropos`, `/#produits`, `/#contact`) et l'assigner à l'emplacement **Menu principal**
-4. Installer le plugin **WPForms Lite** → créer un formulaire de contact simple → récupérer son ID
-
-## 5. Mise en ligne (Infinity Free)
+## 4. Mise en ligne (Infinity Free)
 
 1. Créer un compte sur [infinityfree.com](https://infinityfree.com) + un sous-domaine gratuit
 2. Installer WordPress via **Script installer**
@@ -63,7 +47,7 @@ Puis, dans l'admin WordPress :
 4. **Apparence → Thèmes → Ajouter → Téléverser un thème** → sélectionner le .zip → **Installer** → **Activer**
 5. Uploader les images manquantes (`hero.jpg`) directement dans `wp-content/themes/brasserie-ts/assets/img/` via le File Manager cPanel
 
-## 6. Captures d'écran
+## 5. Captures d'écran
 
 Acceuil :<img width="2559" height="1263" alt="image" src="https://github.com/user-attachments/assets/1df30eb1-6da7-41c0-9dda-1aacdbd457df" />
 
@@ -73,20 +57,5 @@ Produit :
 
 Contact : <img width="2559" height="1155" alt="image" src="https://github.com/user-attachments/assets/f7a6672b-5457-41bc-b242-24186ee49f35" />
 
-## 7. Compétences
-
-**Bloc 1 — Support et mise à disposition de services informatiques**
-- Installation et configuration d'un CMS (WordPress)
-- Déploiement sur hébergement mutualisé (Infinity Free, File Manager cPanel)
-
-**Bloc 2 — Conception et développement**
-- Développement d'un thème PHP/HTML/CSS
-- Gestion du WP Form
-- Accessibilité
-- Versionnage avec Git
-
-**Compétences autres**
-- Rédaction de documentation technique (ce README)
-- Prise en compte d'un cahier des charges client
 
 **Auteur :** Romain Dacet — BTS SIO SISR — 2025/2027
