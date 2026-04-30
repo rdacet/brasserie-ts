@@ -53,7 +53,8 @@ Acceuil :<img width="2559" height="1263" alt="image" src="https://github.com/use
 
 A propos : <img width="2559" height="1165" alt="image" src="https://github.com/user-attachments/assets/47ac8990-cf02-4f45-b4c7-faaab4a7d0a1" />
 
-Produit : 
+Produit : <img width="1859" height="885" alt="image" src="https://github.com/user-attachments/assets/64a2dd65-531a-4b2c-9042-704147d15cbc" />
+
 
 Contact : <img width="2559" height="1155" alt="image" src="https://github.com/user-attachments/assets/f7a6672b-5457-41bc-b242-24186ee49f35" />
 
